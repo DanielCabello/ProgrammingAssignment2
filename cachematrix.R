@@ -1,8 +1,9 @@
 ## The functions allow caching the values of a matrix and its inverse matrix in a special object
 ## These stored values can be recovered instead of being computerized again.
 
-
+## FUNCTION 1: makeCacheMatrix
 ## It generates a cacheable object that includes a list with four functions
+
 makeCacheMatrix <- function(x = matrix()) {  
         m <- NULL
     
@@ -25,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
          getsolve = getsolve)
 }
 
-
+## FUNCTION 2: cacheSolve()
 ## Function that calculates the inverse of the special "matrix" created
 ## and cached with the function 'makeCacheMatrix'
 
